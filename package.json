@@ -1,0 +1,24 @@
+{
+  "name": "@dicedtomato/logger",
+  "version": "0.0.1",
+  "description": "Very lightweight logger for my projects",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    "require": "./dist/index.js",
+    "import": "./dist/index.mjs"
+  },
+  "scripts": {
+    "build": "esbuild index.js --outfile=dist/index.js --format=cjs --platform=node && cp index.mjs dist/index.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "colorette": "^2.0.16",
+    "fecha": "^4.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.14.11"
+  }
+}
